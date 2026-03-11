@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProtoPress | Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="admin">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">ProtoPress</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="admin.html">Create Post</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h1>Mock Admin: Create a Post</h1>
+        <p class="muted">This is a front-end only demo that stores posts in your browser.</p>
+        <form id="post-form" class="post-form">
+          <label>
+            Title
+            <input required name="title" type="text" placeholder="e.g., My first prototype post" />
+          </label>
+
+          <label>
+            Author
+            <input required name="author" type="text" placeholder="e.g., Alex" />
+          </label>
+
+          <label>
+            Category
+            <input required name="category" type="text" placeholder="e.g., Product" />
+          </label>
+
+          <label>
+            Content
+            <textarea required name="content" rows="8" placeholder="Write your post content here..."></textarea>
+          </label>
+
+          <button class="btn" type="submit">Publish Post</button>
+        </form>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
