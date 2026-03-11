@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SteelBlog Proto | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="top-strip">
+      <div class="container top-strip-inner">
+        <span>Steel Insights • Procurement Updates • Industry Trends</span>
+        <span>Mon–Sat 9:00AM–7:00PM</span>
+      </div>
+    </header>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">SteelBlog <span>Proto</span></a>
+        <nav>
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="admin.html">Write Post</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container home-grid">
+      <section>
+        <section id="featured-post" class="featured card"></section>
+
+        <section class="toolbar card">
+          <div class="toolbar-row">
+            <input id="search-input" type="search" placeholder="Search by title, content, author..." />
+            <select id="category-filter"></select>
+            <select id="sort-filter">
+              <option value="latest">Latest first</option>
+              <option value="oldest">Oldest first</option>
+              <option value="title">Title A-Z</option>
+            </select>
+            <button id="clear-filters" class="btn subtle-btn" type="button">Reset</button>
+          </div>
+        </section>
+
+        <section class="posts-section">
+          <div class="section-title-wrap">
+            <h2>Latest Articles</h2>
+            <button id="seed-btn" class="btn subtle-btn" type="button">Restore Sample Data</button>
+          </div>
+          <div id="post-list" class="post-list" aria-live="polite"></div>
+          <div class="pager">
+            <button class="btn subtle-btn" id="prev-page" type="button">Previous</button>
+            <span id="page-status"></span>
+            <button class="btn subtle-btn" id="next-page" type="button">Next</button>
+          </div>
+        </section>
+      </section>
+
+      <aside class="sidebar">
+        <section class="card">
+          <h3>Categories</h3>
+          <div id="category-chips" class="chip-wrap"></div>
+        </section>
+
+        <section class="card">
+          <h3>Newsletter</h3>
+          <p class="muted">Get weekly steel market updates (demo only).</p>
+          <form id="newsletter-form" class="inline-form">
+            <input id="newsletter-email" type="email" placeholder="you@company.com" required />
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+          <p id="newsletter-message" class="form-message" aria-live="polite"></p>
+        </section>
+
+        <section class="card">
+          <h3>Trending Tags</h3>
+          <div class="chip-wrap">
+            <span class="chip">#TMT</span>
+            <span class="chip">#Scrap</span>
+            <span class="chip">#HotRolled</span>
+            <span class="chip">#Imports</span>
+            <span class="chip">#Logistics</span>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

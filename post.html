@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SteelBlog Proto | Post</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="post">
+    <header class="top-strip">
+      <div class="container top-strip-inner">
+        <span>Steel Insights • Procurement Updates • Industry Trends</span>
+        <span>Mon–Sat 9:00AM–7:00PM</span>
+      </div>
+    </header>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">SteelBlog <span>Proto</span></a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="admin.html">Write Post</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container post-layout">
+      <article id="post-detail" class="card post-detail" aria-live="polite"></article>
+
+      <section class="card">
+        <h3>Comments (Mock)</h3>
+        <form id="comment-form" class="post-form">
+          <label>Name <input name="name" required type="text" placeholder="Your name" /></label>
+          <label>Comment <textarea name="comment" required rows="4" placeholder="Share your view..."></textarea></label>
+          <button type="submit" class="btn">Add Comment</button>
+        </form>
+        <div id="comment-list" class="comment-list"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SteelBlog Proto | Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="admin">
+    <header class="top-strip">
+      <div class="container top-strip-inner">
+        <span>Steel Insights • Procurement Updates • Industry Trends</span>
+        <span>Mon–Sat 9:00AM–7:00PM</span>
+      </div>
+    </header>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">SteelBlog <span>Proto</span></a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="admin.html" aria-current="page">Write Post</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h1>Mock Admin Editor</h1>
+        <p class="muted">WordPress-like demo editor with local browser storage only.</p>
+
+        <form id="post-form" class="post-form" novalidate>
+          <label>Title <input required name="title" maxlength="100" type="text" placeholder="Market movement in Q2" /></label>
+          <label>Author <input required name="author" maxlength="50" type="text" placeholder="Editorial Team" /></label>
+          <label>Category <input required name="category" maxlength="30" type="text" placeholder="Market Update" /></label>
+          <label>Read Time (minutes) <input required name="readTime" min="1" max="30" type="number" value="4" /></label>
+          <label>Summary <textarea required name="summary" minlength="40" rows="3" placeholder="2-line summary for the card preview"></textarea></label>
+          <label>Content <textarea required name="content" minlength="80" rows="10" placeholder="Write full post content..."></textarea></label>
+          <button class="btn" type="submit">Publish Post</button>
+        </form>
+
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
