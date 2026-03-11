@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProtoPress | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">ProtoPress</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="admin.html">Create Post</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero card">
+        <h1>Welcome to your WordPress-style blog prototype</h1>
+        <p>
+          This lightweight prototype includes a home feed, single post page, and mock admin post form using
+          HTML, CSS, and JavaScript.
+        </p>
+      </section>
+
+      <section class="posts-section">
+        <div class="section-title-wrap">
+          <h2>Latest Posts</h2>
+          <button id="seed-btn" class="btn subtle-btn">Reset to sample posts</button>
+        </div>
+        <div id="post-list" class="post-list"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
